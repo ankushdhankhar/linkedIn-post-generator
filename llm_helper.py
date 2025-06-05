@@ -3,8 +3,15 @@ from langchain_groq import ChatGroq
 import os
 
 from pydantic.v1.schema import model_type_schema
+import streamlit as st
 
-load_dotenv()
+# Use secrets in production, .env in local
+if os.getenv("ENV") != "production":
+    from dotenv import load_dotenv
+    load_dotenv()
+    api_key = os.getenv("OPENAI_API_KEY")
+else:
+    api_key = st.secrets["OPENAI_API_KEY"]
 
 llm = ChatGroq(groq_api_key=os.getenv("GROQ_API_KEY"), model_name = "llama-3.3-70b-versatile")
 
