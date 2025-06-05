@@ -22,13 +22,6 @@ A powerful and intuitive LinkedIn Post Generator powered by **Meta's LLaMA 3**, 
 
 ---
 
-## 📸 Screenshot
-
-![App Screenshot](https://linkedin-post-generator-1.streamlit.app/_static/favicon.png)  
-*(Replace this with a full-page screenshot of your app)*
-
----
-
 ## ⚙️ Tech Stack
 
 | Technology | Purpose |
@@ -48,3 +41,28 @@ A powerful and intuitive LinkedIn Post Generator powered by **Meta's LLaMA 3**, 
 ```bash
 git clone https://github.com/yourusername/linkedin-post-generator.git
 cd linkedin-post-generator
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Set up environment variables
+
+####Create a .env file and add:
+#####GROQ_API_KEY=your_groq_api_key
+
+### 4. Run the app
+
+```bash
+streamlit run app.py
+```
+
+## 🧠 Future Improvements
+
+- Add X (Twitter) post support
+- Option to save/download generated posts
+- User authentication for personal history
+- Extend to image + text posts with Vision-LLaMA
