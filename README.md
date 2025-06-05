@@ -51,8 +51,8 @@ pip install -r requirements.txt
 
 ### 3. Set up environment variables
 
-####Create a .env file and add:
-#####GROQ_API_KEY=your_groq_api_key
+Create a .env file and add:
+GROQ_API_KEY=your_groq_api_key
 
 ### 4. Run the app
 
@@ -60,9 +60,12 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+---
 ## 🧠 Future Improvements
 
 - Add X (Twitter) post support
 - Option to save/download generated posts
 - User authentication for personal history
 - Extend to image + text posts with Vision-LLaMA
+
+---
